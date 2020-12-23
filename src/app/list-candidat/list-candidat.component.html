@@ -1,0 +1,104 @@
+<!-- Content area -->
+<div class="content" >
+    <!-- Invoice archive -->
+    <div class="card" style="margin-top: 50px;">
+      <div class="card-header header-elements-inline">
+        <h6 class="card-title"> Liste des candidats </h6>
+
+        <div class="heading-elements">
+          <button class="btn btn-success" [routerLink]="['/add-candidat']"> Ajouter un candidat  </button>
+        </div>
+      </div>
+      <br>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table stand-table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th> CIN </th>
+              <th> nom </th>
+              <th> prénom </th>
+              <th> Date de naissance </th>
+              <th> URL Facebook </th>
+              <th> URL Linkedin </th>
+              <th> URL Twitter </th>
+              <th> E-mail </th>
+              <th> Position dans la liste  </th>
+              <th> Actions </th>
+
+
+
+
+            </tr>
+            </thead>
+            <tbody>
+             <tr > 
+               <!-- *ngFor="let candidat of candidats; let i = index" -->
+              
+              <td>
+               <!-- {{candidat.candidat_id}} -->
+               1
+
+              </td>
+              <td>
+                <!-- {{candidat.cin}} -->
+                123456789
+              </td>
+              <td>
+                <!-- {{candidat.nom}} -->
+                candidat 
+              </td>
+              <td>
+                <!-- {{candidat.prenom}} -->
+                1
+              </td>
+              <td>
+                <!-- {{candidat.dns}} -->
+              03/05/97
+              </td>
+              <td>
+                <!-- {{candidat.url_facebook}} -->
+                url_fb
+              </td>
+              <td>
+                <!-- {{candidat.url_twitter}} -->
+                url_twitter
+              </td>
+              <td>
+                <!-- {{candidat.url_linkedin}} -->
+                url_likedin
+              </td>
+              <td>
+                <!-- {{candidat.email}} -->
+                candidat1@gmail.com
+              </td>
+              <td>
+                <!-- {{candidat.position}} -->
+                président
+             </td>
+             <td class="text-center">
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Modifier/Supprimer
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"> Modifier </a>
+                  <a class="dropdown-item" href="#"> Supprimer </a>
+                </div>
+              </div>
+            </td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /invoice archive -->
+  </div>
+  <!-- /content area -->
+
+
+
+

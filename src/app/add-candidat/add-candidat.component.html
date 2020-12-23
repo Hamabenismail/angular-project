@@ -1,0 +1,66 @@
+
+<div class="card i-am-centered">
+    <div class="card-header header-elements-inline">
+      <h3 class="card-title"> Ajouter un candidat  </h3>
+      </div>
+      <div class="card-body">
+        <form class="form-horizontal">
+
+            <div class="form-group col-md-8">
+              <label class="control-label"> CIN : </label>
+              <input [(ngModel)]="candidat.cin" name="cin" type="text" class="form-control">
+            </div>
+
+            <div class="form-group col-md-8">
+              <label class="control-label">Nom : </label>
+              <input [(ngModel)]="candidat.nom" name="nom" type="text" class="form-control">
+            </div>
+
+            <div class="form-group col-md-8">
+                <label class="control-label">Prénom : </label>
+                <input [(ngModel)]="candidat.prenom" name="prenom" type="text" class="form-control">
+              </div>
+
+             <div class="form-group col-md-8">
+                <label class="control-label"> Date de naissance : </label>
+                <input [(ngModel)]="candidat.dns" name="dns" type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-8">
+                <label class="control-label">URL Facebook  : </label>
+                <input [(ngModel)]="candidat.url_facebook" name="url_facebook" type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-8">
+                <label class="control-label">URL Twitter  : </label>
+                <input [(ngModel)]="candidat.url_twitter" name="url_twitter" type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-8">
+                <label class="control-label">URL Linkedin : </label>
+                <input [(ngModel)]="candidat.url_linkedin" name="url_linkedin" type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-8">
+                <label class="control-label"> E-MAIL : </label>
+                <input [(ngModel)]="candidat.email" name="email" type="text" class="form-control">
+              </div>
+
+              <div class="form-group col-md-8">
+                <label class="control-label"> Position dans la liste  : </label>
+                <input [(ngModel)]="candidat.position" name="position" type="text" class="form-control">
+              </div>
+
+        </form>
+      </div>
+        <div class="col-md-10">
+          <button class="btn btn-primary" style="position: relative; float: right;"  (click)="addCandidat()"> Enregistrer  </button>
+        </div>
+  </div>
+
+
+
+
+
+
+ 
