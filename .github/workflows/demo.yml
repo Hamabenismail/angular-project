@@ -48,14 +48,16 @@ jobs:
        uses: actions/download-artifact@v2
        with:
          name: deploy_dist
-     - name: Build and Push Docker Image
-       uses: mr-smithers-excellent/docker-build-push@v5
-       with:
-         image: mohamedbenismail/angular-tunisian-selection
-         tags: latest
-         registry: docker.io
-         username: ${{ secrets.DOCKER_USERNAME }}
-         password: ${{ secrets.DOCKER_PASSWORD }}
+     - name: Cat files
+       run: ls 
+    #  - name: Build and Push Docker Image
+    #    uses: mr-smithers-excellent/docker-build-push@v5
+    #    with:
+    #      image: mohamedbenismail/angular-tunisian-selection
+    #      tags: latest
+    #      registry: docker.io
+    #      username: ${{ secrets.DOCKER_USERNAME }}
+    #      password: ${{ secrets.DOCKER_PASSWORD }}
        
 
       
