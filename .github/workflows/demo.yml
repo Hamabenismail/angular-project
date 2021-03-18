@@ -44,9 +44,9 @@ jobs:
      - name: Setup repo
        uses: actions/checkout@v2
 
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
+    -  name: Download artifact
+       uses: actions/download-artifact@v2
+       with:
          name: deploy_dist
      - name: Build and Push Docker Image
        uses: mr-smithers-excellent/docker-build-push@v5
