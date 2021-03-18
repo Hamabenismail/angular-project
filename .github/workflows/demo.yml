@@ -49,7 +49,7 @@ jobs:
        with:
          name: deploy_dist
      - name: Cat files
-       run: cd deploy_dist 
+       run: cd dist/
     #  - name: Build and Push Docker Image
     #    uses: mr-smithers-excellent/docker-build-push@v5
     #    with:
