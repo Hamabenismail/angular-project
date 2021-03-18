@@ -49,7 +49,9 @@ jobs:
        with:
          name: deploy_dist
      - name: Cat files
-       run: ls 
+       run: |
+         cd /home/runner/work/angular-project/angular-project
+         ls   
     #  - name: Build and Push Docker Image
     #    uses: mr-smithers-excellent/docker-build-push@v5
     #    with:
